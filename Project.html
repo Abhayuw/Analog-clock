@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clock</title>
+        <link rel="stylesheet" href="project1 style.css">
+        
+    </head>
+    <body>
+    
+        
+    
+    <img id="photo" src="First frame.png" alt="$$">
+    <div id="clock">
+        <div id="hour"><img src="hour hand final.png" alt="hr"></div>
+        <div id="minute"><img src="minute hand final.png" alt="min"></div>
+        <div id="second"><img src="minute hand final.png" alt="sec"></div>
+      </div>
+      <div id="smallclock"></div>
+   
+
+       <video id="vdo" width="320" height="240" controls autoplay>
+           <source src="mp4vdo.mp4" type="video/mp4">
+        </video>
+      
+      
+      <script>
+        const btn= document.querySelector("#smallclock");
+        let y= document.getElementById("vdo");
+        
+        btn.addEventListener('click', function(event){
+          y.style.display="block";  
+         console.log('Button Clicked');
+         document.querySelector('video').play();
+         setTimeout(function () {document.querySelector('video').pause()}, 5000);
+         
+         }); 
+        
+
+        
+      </script>  
+   
+      
+</body>
+</html>
