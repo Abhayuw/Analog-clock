@@ -5,9 +5,7 @@ let sec=d.getSeconds();
  let hrota=
  let minrota=
  let secrota= 
- document.getElementById("hour").style.transform:
- document.getElementById("minute").style.transform:
- document.getElementById("second").style.transform:
+ 
 
  
 
